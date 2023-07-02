@@ -53,4 +53,25 @@ public class BasePage {
     @FindBy(xpath = "//div[@class=\"notification help is-danger is-light mt-5\"]")
     public WebElement formular;
 
+    @FindBy(xpath = "//b[.=\"Vielen Dank für Ihre Kontaktaufnahme!\"]")
+    public WebElement vielenDank;
+
+    @FindBy(xpath = "(//input[@type=\"checkbox\"])[1]")
+    public WebElement telefon;
+
+    @FindBy(xpath = "//input[@id=\"phone\"]")
+    public WebElement nummer;
+
+    @FindBy(xpath = "(//label[@class=\"checkbox\"])[4]")
+    public WebElement nachmittag;
+
+    @FindBy(id = "topic")
+    public WebElement thema;
+
+    @FindBy(xpath = "//button[@type=\"submit\"]")
+    public WebElement submit;
+
+    @FindBy(xpath = "//div[@class=\"help is-danger\"]")
+    public WebElement danger;
+
 }
